@@ -12,10 +12,13 @@ class Comment extends Model
     protected $fillable = [
         'name',
         'text',
+        'commentImage',
     ];
 
     public function post()
     {
         return $this->belongsTo(Post::class);
     }
+
+
 }

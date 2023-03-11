@@ -18,6 +18,11 @@
             </div>
 
             <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" class="form-control" id="name" name="name" value="{{ Auth::user()->name }}" readonly>
+            </div>
+
+            <div class="form-group">
                 <label for="body">Текст поста</label>
                 <textarea class="form-control @error('body') is-invalid @enderror" id="body" name="body" required>{{ old('body') }}</textarea>
                 @error('body')

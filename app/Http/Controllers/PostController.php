@@ -26,6 +26,7 @@ class PostController extends Controller
             'title' => 'required',
             'body' => 'required',
             'image' => 'nullable|image|max:2048',
+            'name' => 'nullable',
         ]);
 
         if ($request->hasFile('image')) {

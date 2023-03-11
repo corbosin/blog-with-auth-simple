@@ -11,7 +11,7 @@ class Post extends Model
 
     protected $table = 'posts';
     protected $guarded = false;
-    protected $fillable = ['title', 'body', 'image'];
+    protected $fillable = ['title', 'body', 'image', 'name'];
 
     public function comments()
     {
